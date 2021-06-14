@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include<conio.h>
+void starPattern(int rows)
+{
+    int i,j;
+    for(i=0;i<rows;i++)
+     {
+         for(j=0;j<=i;j++)
+         {
+            printf("*");
+             
+         }
+         printf("\n");
+     }
+    
+    
+}
+void reversestarPattern(int rows)
+{
+    int i,j;
+    for(i=0;i<rows;i++)
+     {
+         for(j=0;j<=rows-i-1;j++)
+         {
+            printf("*");
+             
+         }
+         printf("\n");
+     }
+    
+    
+}
+int main()
+{
+    int rows;
+    printf("How many rows do you want\n");
+    scanf("%d",&rows);
+    starPattern(rows);
+    reversestarPattern(rows);
+    return 0;
+}
+
+
